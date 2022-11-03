@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2rem;
+    margin: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    padding-left: 80px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 30px;
+
+}
+
+
+
+nav ul li a{
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: darkgray;
+}
+
+.body{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    'web3 web3 news'
+    'head desc news'
+    'foo foo foo'
+   
+}
+
+.color-img{
+    grid-area: web3;
+    padding: 50px;
+}
+
+
+.new{
+    grid-area: news;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 50px;
+    
+}
+
+.new-tab{
+    padding-top: 50px;
+    font-size: 3.5rem;
+    text-align: start;
+    padding-left: 30px;
+    color: darksalmon;
+
+}
+
+.text{
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+
+.text h3{
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.head{
+    grid-area: head;
+}
+
+.description{
+    grid-area: desc;
+}
+
+.foot{
+    grid-area: foo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* .body:nth-child(1){
+    grid-area: web3;
+}
+
+.body:nth-child(2){
+    grid-area: news;
+}
+.body:nth-child(3){
+    grid-area: head;
+}
+.body:nth-child(4){
+    grid-area: desc;
+}
+.body:last-child{
+    grid-area: foo;
+} */
