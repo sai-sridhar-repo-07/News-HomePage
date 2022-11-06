@@ -5,8 +5,9 @@
 }
 
 body{
-    margin: 2rem;
+   
     margin: 100px;
+    margin-bottom: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
@@ -44,7 +45,11 @@ nav ul li a{
     grid-template-areas: 
     'web3 web3 news'
     'head desc news'
-    'foo foo foo'
+    'foo foo foo';
+
+    grid-template-rows: 700px;
+
+    
    
 }
 
@@ -59,6 +64,8 @@ nav ul li a{
     background-color: black;
     color: whitesmoke;
     margin-top: 50px;
+    text-align: center;
+    /* height: fit-content; */
     
 }
 
@@ -71,23 +78,41 @@ nav ul li a{
 
 }
 
-.text{
+.text-1, .text-2, .text-3{
     margin: 30px;
-    padding: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid whitesmoke;
+    font-size: 1.35rem;
 
 }
 
+.mini-text{
+    padding-left: 10px;
+    /* padding-top: 10px; */
+}
 
-.text h3{
-    font-size: 2rem;
+.text-3{
+    border-bottom: none;
+}
+
+.texting{
+    width: 450px;
+    align-items:stretch;
+    
+}
+
+
+
+.text-1 h3,.text-2 h3,.text-3 h3{
+    font-size: 1.75rem;
     padding: 5px;
 }
 
 .head{
     grid-area: head;
+    
 }
 
 .description{
@@ -100,6 +125,91 @@ nav ul li a{
     flex-direction: row;
     justify-content: space-around;
 }
+
+.heading{
+    font-size: 50px;
+    width: 800px;
+    text-align: center;
+}
+
+.description{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 800px;
+
+}
+
+.btn{
+    text-decoration: none;
+    background-color: rgba(252, 45, 45,0.6);
+    color: white;
+    display: inline-block;
+    width: max-content;
+    font-size: 40px;
+    margin: 40px;
+    
+
+}
+
+.foot{
+    display: grid;
+    padding-left: 80px;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.foot-1,.foot-2,.foot-3{
+    display: flex;
+    gap: 20px;
+}
+
+.retro-text, .laptop-text, .growth-text{
+    text-align: start;
+}
+
+.foo{
+    font-size: 3rem;
+    color: grey;
+}
+
+.inner{
+    font-size: 2rem;
+    padding-top: 20px;
+    
+}
+
+.para{
+    font-size: 1.5rem;
+    padding-top: 30px;
+    color: grey;
+    width: 300px;
+}
+
+.attribution{
+    margin-top: 20px;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.repo{
+    text-decoration: none;
+    color: black;
+}
+
+.attribution a:hover{
+    background-color: cadetblue;
+    color: azure;
+}
+
 
 
 /* .body:nth-child(1){
